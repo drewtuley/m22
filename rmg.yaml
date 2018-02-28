@@ -1,0 +1,669 @@
+- generator_names: {
+    solargen_1: "SolaGen_MkI",
+    solargen_2: "SolaGen_MkII",
+    solargen_3: "SolaGen_MkIII",
+    solargen_4: "SolaGen_MkIV",
+    solargen_5: "SolaGen_MkV",
+    solargen_6: "SolaGen_MkVI",
+    solargen_7: "SolaGen_MkVII",
+    solargen_8: "SolaGen_MkVIII",
+    solargen_9: "SolaGen_MkIX",
+    solargen_10: "SolaGen_MkX"
+}
+
+# planetary systems data
+- !System
+  name: Moon
+  researched: True
+  avg_trip_time: None
+  generator_power_map: {
+    solargen_1: 100,
+    solargen_2: 230,
+    solargen_3: 460,
+    solargen_4: 940,
+    solargen_5: 1875,
+    solargen_6: 3750,
+    solargen_7: 7500,
+    solargen_8: 15000,
+    solargen_9: 35000,
+    solargen_10: 35010 }
+- !System
+  name: Mars
+  researched: False
+  avg_trip_time: 29.6
+  generator_power_map: {
+    solargen_1: 36,
+    solargen_2: 83,
+    solargen_3: 167,
+    solargen_4: 341,
+    solargen_5: 681,
+    solargen_6: 1362,
+    solargen_7: 2724,
+    solargen_8: 5449,
+    solargen_9: 10898,
+    solargen_10: 12718 }
+- !System
+  name: Jupiter
+  researched: False
+  avg_trip_time: 52.4
+  generator_power_map: {
+    solargen_1: 7,
+    solargen_2: 17,
+    solargen_3: 34,
+    solargen_4: 69,
+    solargen_5: 139,
+    solargen_6: 278,
+    solargen_7: 556,
+    solargen_8: 1113,
+    solargen_9: 2226,
+    solargen_10: 2598 }
+- !System
+  name: Saturn
+  researched: False
+  avg_trip_time: 95.2
+  generator_power_map: {
+    solargen_1: 3,
+    solargen_2: 8,
+    solargen_3: 17,
+    solargen_4: 36,
+    solargen_5: 73,
+    solargen_6: 146,
+    solargen_7: 292,
+    solargen_8: 585,
+    solargen_9: 1171,
+    solargen_10: 1367 }
+- !System
+  name: Uranus
+  researched: False
+  avg_trip_time: 191
+  generator_power_map: {
+    solargen_1: 1,
+    solargen_2: 4,
+    solargen_3: 8,
+    solargen_4: 18,
+    solargen_5: 36,
+    solargen_6: 73,
+    solargen_7: 146,
+    solargen_8: 292,
+    solargen_9: 585,
+    solargen_10: 683 }
+- !System
+  name: Neptune
+  researched: False
+  avg_trip_time: 292.8
+  generator_power_map: {
+    solargen_1: 1,
+    solargen_2: 2,
+    solargen_3: 5,
+    solargen_4: 11,
+    solargen_5: 21,
+    solargen_6: 43,
+    solargen_7: 87,
+    solargen_8: 175,
+    solargen_9: 351,
+    solargen_10: 410 }
+- !System
+  name: Pluto
+  researched: False
+  avg_trip_time: 392.2
+  generator_power_map: {
+    solargen_1: 0,
+    solargen_2: 0,
+    solargen_3: 1,
+    solargen_4: 3,
+    solargen_5: 7,
+    solargen_6: 14,
+    solargen_7: 29,
+    solargen_8: 58,
+    solargen_9: 117,
+    solargen_10: 136 }
+# planet and moon data
+- !CelestialBody
+  researched: False
+  name: Moon
+  system: Earth
+  lifeform: Human
+  materials: {
+    hydrogen: 375,
+    oxygen: 2625,
+    water: 375,
+    nitrogen: 375,
+    titanium: 5625,
+    aluminium: 3937,
+    silica: 4125,
+    iron: 3375 }
+- !CelestialBody
+  researched: False
+  name: Mars
+  system: Mars
+  lifeform: Martian
+  materials: {
+    hydrogen: 375,
+    oxygen: 750,
+    water: 1500,
+    nitrogen: 492,
+    silica: 4500,
+    iron: 5625,
+    silver: 750 }
+- !CelestialBody
+  researched: False
+  name: Phobos
+  system: Mars
+  lifeform: None
+  materials: []
+- !CelestialBody
+  researched: False
+  name: Deimos
+  lifeform: None
+  system: Mars
+  materials: []
+- !CelestialBody
+  researched: False
+  name: Callisto
+  System: Jupiter
+  lifeform: Human
+  materials: {
+    hydrogen: 375,
+    nitrogen: 375,
+    sulphur: 750,
+    titanium: 2625,
+    aluminium: 1687,
+    copper: 1125,
+    silica: 3750,
+    iron: 3000,
+    silver: 375,
+    platinum: 750 }
+- !CelestialBody
+  researched: False
+  name: Leda
+  System: Jupiter
+  lifeform: Human
+  materials: {
+    hydrogen: 375,
+    nitrogen: 375,
+    methane: 3000,
+    sulphur: 1125,
+    copper: 750,
+    silica: 1875,
+    iron: 1312,
+    uranium: 937 }
+- !CelestialBody
+  researched: False
+  name: Saturn
+  system: Saturn
+  lifeform: Hydrogoid
+  materials: {
+    hydrogen: 5625,
+    oxygen: 750,
+    water: 375,
+    nitrogen: 2625,
+    methane: 375,
+    sulphur: 1125,
+    silica: 5625,
+    iron: 3375 }
+- !CelestialBody
+  researched: False
+  name: Enceladus
+  system: Saturn
+  lifeform: Human
+  materials: {
+    hydrogen: 750,
+    oxygen: 375,
+    water: 375,
+    nitrogen: 375,
+    aluminium: 2250,
+    silica: 2437,
+    iron: 1312 }
+- !CelestialBody
+  researched: False
+  name: Tethys
+  system: Saturn
+  lifeform: Human
+  materials: {
+    hydrogen: 562,
+    oxygen: 281,
+    water: 375,
+    nitrogen: 187,
+    methane: 187,
+    aluminium: 1312,
+    copper: 750,
+    silica: 4500,
+    uranium: 4125 }
+- !CelestialBody
+  researched: False
+  name: Rhea
+  system: Saturn
+  lifeform: Human
+  materials: {
+    hydrogen: 187,
+    oxygen: 187,
+    water: 187,
+    nitrogen: 375,
+    silica: 5625,
+    platinum: 3937 }
+- !CelestialBody
+  researched: False
+  name: Titan
+  system: Saturn
+  lifeform: Nitroid
+  materials: {
+    hydrogen: 750,
+    oxygen: 187,
+    nitrogen: 1875,
+    methane: 562,
+    silver: 1125,
+    platinum: 1500,
+    uranium: 1687 }
+- !CelestialBody
+  researched: False
+  name: Hyperion
+  system: Saturn
+  lifeform: Sulphuroid
+  materials: {
+    methane: 375,
+    sulphur: 1875,
+    aluminium: 1687,
+    copper: 750,
+    uranium: 562 }
+- !CelestialBody
+  researched: False
+  name: Phoebe
+  system: Saturn
+  lifeform: Human
+  materials: {
+    hydrogen: 375,
+    oxygen: 375,
+    water: 187,
+    nitrogen: 562,
+    methane: 375,
+    titanium: 1500,
+    silica: 3750,
+    iron: 1312 }
+- !CelestialBody
+  researched: False
+  name: Uranus
+  system: Uranus
+  lifeform: Methanoid
+  materials: {
+    hydrogen: 187,
+    nitrogen: 750,
+    methane: 2062,
+    sulphur: 375,
+    titanium: 562,
+    copper: 2625,
+    silica: 3000,
+    iron: 1312,
+    uranium: 750 }
+- !CelestialBody
+  researched: False
+  name: Miranda
+  system: Uranus
+  lifeform: Human
+  materials: {
+    copper: 375,
+    silica: 5625,
+    iron: 1500,
+    silver: 3375,
+    platinum: 375 }
+- !CelestialBody
+  researched: False
+  name: Ariel
+  system: Uranus
+  lifeform: Human
+  materials: {
+    hydrogen: 562,
+    oxygen: 187,
+    nitrogen: 1687,
+    methane: 187,
+    sulphur: 1218,
+    aluminium: 3187,
+    silica: 4921,
+    platinum: 937 }
+- !CelestialBody
+  researched: False
+  name: Umbriel
+  system: Uranus
+  lifeform: Sulphuroid
+  materials: {
+    hydrogen: 187,
+    oxygen: 375,
+    nitrogen: 187,
+    sulphur: 1500,
+    silica: 5250 }
+- !CelestialBody
+  researched: False
+  name: Titania
+  system: Uranus
+  lifeform: Methanoid
+  materials: {
+    hydrogen: 1312,
+    oxygen: 187,
+    water: 187,
+    methane: 1875,
+    sulphur: 1125,
+    copper: 375,
+    silica: 3000,
+    silver: 937 }
+- !CelestialBody
+  researched: False
+  name: Oberon
+  system: Uranus
+  lifeform: Human
+  materials: {
+    hydrogen: 375,
+    oxygen: 375,
+    water: 937,
+    nitrogen: 562,
+    titanium: 750,
+    aluminium: 375,
+    silica: 2625,
+    iron: 937,
+    uranium: 1593 }
+- !CelestialBody
+  researched: False
+  name: Neptune
+  system: Neptune
+  lifeform: Methanoid
+  materials: {
+    hydrogen: 562,
+    methane: 1687,
+    sulphur: 562,
+    aluminium: 3000,
+    copper: 2437,
+    silica: 1312,
+    iron: 1687,
+    platinum: 2625,
+    uranium: 187 }
+- !CelestialBody
+  researched: False
+  name: Triton
+  system: Neptune
+  lifeform: Methanoid
+  materials: {
+    hydrogen: 1312,
+    oxygen: 1125,
+    water: 1500,
+    nitrogen: 562,
+    methane: 375,
+    titanium: 2625,
+    silica: 3375,
+    chromium: 3187,
+    platinum: 187 }
+- !CelestialBody
+  researched: False
+  name: Pluto
+  system: Pluto
+  lifeform: Methanoid
+  materials: {
+    hydrogen: 937,
+    nitrogen: 375,
+    methane: 1687,
+    sulphur: 937,
+    silica: 4875,
+    platinum: 1687,
+    uranium: 750 }
+# production list
+- !ProductionItem
+  researched: False
+  name: Probe
+  mass: 6
+  power: 50
+  time: 111 #4d15h
+  materials: {
+    titanium: 2,
+    aluminium: 2,
+    silica: 1,
+    iron: 1 }
+- !ProductionItem
+  researched: False
+  name: Grazer
+  mass: 25
+  power: 200
+  time: 179 #7d11h
+  materials: {
+    oxygen: 2,
+    water: 2,
+    nitrogen: 2,
+    titanium: 10,
+    aluminium: 5,
+    silica: 4 }
+- !ProductionItem
+  researched: False
+  name: Waverider
+  mass: 95
+  power: 760
+  time: 238 #9d22h
+  materials: {
+    oxygen: 10,
+    water: 10,
+    nitrogen: 10,
+    titanium: 42,
+    copper: 8,
+    silica: 15 }
+- !ProductionItem
+  researched: False
+  name: Carrack
+  mass: 1500
+  power: 2200
+  time: 359 #14d23h
+  materials: {
+    hydrogen: 30,
+    oxygen: 40,
+    titanium: 710,
+    aluminium: 320,
+    copper: 150,
+    silica: 250 }
+- !ProductionItem
+  researched: False
+  name: S.I.O.S.
+  mass: 2500
+  power: 20000
+  time: 358 #14d22h
+  materials: {
+    oxygen: 100,
+    titanium: 1100,
+    aluminium: 700,
+    copper: 100,
+    silica: 400,
+    platinum: 100 }
+- !ProductionItem
+  researched: False
+  name: Fleet_Carrier
+  mass: 20000
+  power: 35000
+  time: 1440 #~60d
+  materials: {
+    oxygen: 275,
+    titanium: 4750,
+    aluminium: 2400,
+    silica: 1520,
+    iron: 9850,
+    silver: 1205 }
+- !ProductionItem
+  researched: False
+  name: Fighter
+  mass: 35
+  power: 220
+  time: 111 #4d15h
+  materials: {
+    oxygen: 2,
+    nitrogen: 1,
+    titanium: 24,
+    aluminium: 4,
+    silica: 3,
+    iron: 2 }
+- !ProductionItem
+  researched: False
+  name: Orbital_Laser
+  mass: 50
+  power: 400
+  time: 160 #6d16h
+  materials: {
+    hydrogen: 1,
+    water: 3,
+    titanium: 1,
+    aluminium: 12,
+    silica: 23,
+    uranium: 10 }
+- !ProductionItem
+  researched: False
+  name: solargen_1
+  mass: 2
+  power: 3
+  time: 96 #4d
+  materials: {
+    aluminium: 1,
+    silica: 1 }
+- !ProductionItem
+  researched: False
+  name: solargen_2
+  mass: 12
+  power: 80
+  time: 111 #4d15h
+  materials: {
+    aluminium: 8,
+    silica: 4 }
+- !ProductionItem
+  researched: False
+  name: solargen_3
+  mass: 30
+  power: 160
+  time: 131 #5d11h
+  materials: {
+    aluminium: 20,
+    silica: 10 }
+- !ProductionItem
+  researched: False
+  name: solargen_4
+  mass: 50
+  power: 320
+  time: 159 #6d15h
+  materials: {
+    aluminium: 34,
+    silica: 16 }
+- !ProductionItem
+  researched: False
+  name: solargen_5
+  mass: 60
+  power: 650
+  time: 220 #9d4h
+  materials: {
+    aluminium: 47,
+    silica: 23 }
+- !ProductionItem
+  researched: False
+  name: solargen_6
+  mass: 96
+  power: 1000
+  time: 288 #12d
+  materials: {
+    aluminium: 64,
+    silica: 32 }
+- !ProductionItem
+  researched: False
+  name: solargen_7
+  mass: 120
+  power: 1500
+  time: 333 #13d21h
+  materials: {
+    aluminium: 80,
+    silica: 40 }
+- !ProductionItem
+  researched: False
+  name: solargen_8
+  mass: 180
+  power: 2100
+  time: 479 #19d23h
+  materials: {
+    aluminium: 120,
+    silica: 60 }
+- !ProductionItem
+  researched: False
+  name: solargen_9
+  mass: 240
+  power: 3200
+  time: 574 #23d22h
+  materials: {
+    aluminium: 160,
+    silica: 80 }
+- !ProductionItem
+  researched: False
+  name: solargen_10
+  mass: 250
+  power: 4000
+  time: 720 #30d
+  materials: {
+    aluminium: 160,
+    silica: 90 }
+- !ProductionItem
+  researched: False
+  name: Nodule
+  mass: 200
+  power: 410
+  time: 720 #30d
+  materials: {
+    oxygen: 20,
+    nitrogen: 40,
+    titanium: 100,
+    aluminium: 20,
+    silica: 10,
+    iron: 10 }
+- !ProductionItem
+  researched: False
+  name: Bunker
+  mass: 400
+  power: 200
+  time: 240 #10d
+  materials: {
+    titanium: 350,
+    iron: 50 }
+- !ProductionItem
+  researched: False
+  name: Vaccine
+  mass: 6
+  power: 20
+  time: 357 #14d21h
+  materials: {
+    water: 4,
+    sulphur: 1,
+    aluminium: 1 }
+- !ProductionItem
+  researched: False
+  name: Terraformer
+  mass: 1060
+  power: 12000
+  time: 1080 #45d
+  materials: {
+    titanium: 590,
+    copper: 80,
+    silver: 35,
+    chromium: 220,
+    platinum: 100,
+    uranium: 35 }
+# spacecraft
+- !Spacecraft
+  name: Grazer
+  crew: 4
+  capacity: 250
+  researched: False
+- !Spacecraft
+  name: Waverider
+  crew: 10
+  capacity: 50
+  researched: False
+- !Spacecraft
+  name: Carrack
+  crew: 80
+  capacity: 1000
+  researched: False
+- !Spacecraft
+  name: Fleet Carrier
+  crew: 160
+  capacity: 1050
+  researched: False
+- !Spacecraft
+  name: Juggernaut
+  crew: 0
+  capacity: 1060
+  researched: False
+

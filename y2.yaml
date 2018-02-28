@@ -1,0 +1,33 @@
+- !Monster
+  name: Cave Spider
+  hp: [2,3]
+  ac: 16
+  attacks: [SPIT, STING]
+  weapon:
+
+- !Monster
+  name: Gove Spider
+  hp: [2,3]
+  ac: 16
+  attacks: [SPIT, STING]
+  weapon:
+
+- !Monster
+  ac: 10
+  attacks: [MYPRECIOUS]
+  hp: [1, 4]
+  name: Gollum
+  weapon:
+  - !Weapon
+    name: Dragonbreath
+    hp: 100
+
+- !Hero
+  ac: 12
+  attacks: [SLASH]
+  hp: [2,6]
+  name: Hero
+  weapon:
+  - !Weapon
+    name: WaspSting
+    hp: 50
